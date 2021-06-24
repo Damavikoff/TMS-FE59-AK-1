@@ -369,7 +369,7 @@ div.segment + div.segment {
 	margin-top: .7em;
 }
 
-div.grid > div.item div.segment:only-child {
+div.grid > div.item div.segment:not(.vertical):only-child {
 	height: 100%;
 }
 
