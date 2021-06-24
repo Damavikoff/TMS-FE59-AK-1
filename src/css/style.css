@@ -1,0 +1,436 @@
+/* grids */
+
+div.grid {
+	display: flex;
+}
+
+div.black.grid {
+	background: black;
+	color: rgba(255, 255, 255, .7);
+}
+
+div.horizontal.grid {
+	flex-flow: row;
+}
+
+div.vertical.grid {
+	flex-flow: column;
+}
+
+div.grid > div.fluid.item {
+	flex-grow: 1;
+}
+
+/*div.grid > div.item {
+	flex-basis: 0;
+}*/
+
+div.grid > div.item > .div:not(:last-child) {
+	margin-bottom: 40px;
+}
+
+div.grid > div.centered.item {
+	align-self: center;
+}
+
+div.horizontal.grid > div.item:not(:first-child) {
+	margin-left: 5em;
+}
+
+div.narrow.grid {
+	padding: 20px 110px;
+}
+
+div.slim.grid {
+	padding: 40px 110px;
+}
+
+div.normal.grid {
+	padding: 40px 110px;
+}
+
+div.grid {
+	padding: 110px;
+}
+
+div.image.grid {
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+
+div.grid > div.item > div + div {
+	margin-top: 30px;
+}
+
+div.grid.image-1 {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/b_background_1.png);
+}
+
+div.grid.image-2 {
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/b_background_2.png);
+}
+
+div.grid > div.item img.link {
+	height: 2.1em;
+}
+
+div.grid > .item .grid {
+	padding: 0;
+	min-height: 100%;
+}
+
+/* EOL grids */
+
+
+/* colors */
+
+span.white {
+	color: white;
+}
+
+span.grey {
+	color: rgb(134,134,134);
+}
+
+span.pink {
+	color: #ec7979;
+}
+
+div.pink {
+	background: #ec7979;
+}
+
+div.lightpink {
+	background: #f8efef;
+}
+
+div.dark {
+	background: rgb(51, 51, 51);
+}
+
+div.lightgrey {
+	background: #f5f5f5;
+}
+
+div.white {
+	background: white;
+}
+
+div.slightlygrey {
+	background: #e2e2e2;
+}
+
+/* EOL colors */
+
+
+/* fonts */
+
+.tiny {
+	font-size: 12px;
+}
+
+.small {
+	font-size: 14px;
+}
+
+.large {
+	font-size: 20px;
+}
+
+.huge {
+	font-size: 36px;
+}
+
+.giant {
+	font-size: 60px;
+}
+
+.bold {
+	font-weight: 700;
+}
+
+.raleway {
+	font-family: 'Raleway', serif;
+}
+
+.roboto {
+	font-family: 'Roboto', serif;
+}
+
+span.logo {
+	font-size: 2em;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+/* EOL fonts */
+
+
+/* header */
+
+div.header > div.divider {
+	width: 65px;
+	height: 2px;
+	background: white;
+	display: inline-block;
+}
+
+div.header > div.red.divider {
+	background: #e72424;
+}
+
+div.header:not(.image) > div + div {
+	margin-top: 40px;
+}
+
+div.image.header div.image > img {
+	width: 5em;
+	max-width: 5em;
+	height: 5em;
+	max-height: 5em;
+}
+
+div.image.header {
+	display: flex;
+	flex-flow: row;
+}
+
+div.image.header.right.aligned div.image {
+	flex-grow: 1;
+	text-align: right;
+}
+
+div.image.header.right.aligned > div.content {
+	flex-grow: 0;
+	text-align: right;
+}
+
+div.image.header > div.content {
+	align-self: start;
+	padding-left: 1.5em;
+}
+
+/* EOL header */
+
+
+/* card */
+
+div.card {
+	min-width: 370px;
+	background: white;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+div.card:not(.borderless) > div:not(:last-child) {
+	border-bottom: 1px solid lightgrey;
+}
+
+div.card > div {
+	padding: 1em;
+}
+
+div.card > div.padded {
+	padding: 2.5em;
+	padding-top: 1em;
+}
+
+/* EOL card */
+
+input, textarea {
+	border: none;
+	outline: none;
+	color: #686868;
+	border-bottom: 2px solid #bdbdbd;
+	font-size: inherit;
+	width: 100%;
+	box-sizing:border-box;
+}
+
+textarea {
+	resize: none;
+	height: 100%;
+}
+
+input + .placeholder, textarea + .placeholder {
+	pointer-events: none;
+	position: absolute;
+	font-size: .7em;
+	color: #bdbdbd;
+	top: 0;
+	left: 0;
+	transition: .3s opacity ease;
+}
+
+input:focus + .placeholder, input:valid + .placeholder, textarea:focus + .placeholder, textarea:valid + .placeholder {
+	opacity: 0;
+}
+
+input, textarea {
+	padding: .3em;
+}
+
+
+/* buttons */
+
+div.button {
+	padding: 11px 25px;
+	display: inline-block;
+}
+
+div.transparent.button {
+	background: none;
+	border: 2px solid white;
+}
+
+div.transparent.button {
+	opacity: .9;
+}
+
+div.transparent.button:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+div.button {
+	opacity: 1;
+}
+
+div.button:hover {
+	opacity: .9;
+	cursor: pointer;
+}
+
+/* EOL buttons */
+
+
+/* misc */
+
+div.attached {
+	display: block;
+}
+
+.center.aligned {
+	text-align: center;
+	justify-content: center;
+}
+
+.left.aligned {
+	text-align: left;
+	justify-content: start;
+}
+
+.right.aligned {
+	text-align: right;
+	justify-content: end;
+}
+
+.transparent:not(.link):not(.button) {
+	opacity: .7;
+}
+
+.link {
+	opacity: .9;
+}
+
+.link:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+div.segments > div.segment + div.segment {
+	margin: 0;
+}
+
+div.segments.equal > div.segment {
+	padding: 0 1em;
+}
+
+div.segments.equal > div.segment + div.segment {
+	padding-top: 1em;
+}
+
+div.segments.padded > div.segment + div.segment {
+	margin-top: .3em;
+}
+
+div.segments > div.segment {
+	padding: 1em;
+}
+
+div.segments > div.wide.segment {
+	padding: 1.4em 1em;
+}
+
+div.segment + div.segment {
+	margin-top: .7em;
+}
+
+div.grid > div.item div.segment:only-child {
+	height: 100%;
+}
+
+div.grid > div.item div.header + div.segment {
+	margin-top: 3em;
+}
+
+img + img {
+	margin-left: 3em;
+}
+
+body {
+	color: black;
+	margin: 0;
+	font-size: 15px;
+	font-family: 'Open Sans', serif;
+	font-weight: 400;
+}
+
+div {
+	position: relative;
+}
+
+div.tile {
+	padding: 3.3em;
+	border-radius: 4px;
+}
+
+div.grid > div.item > div.tile + div.tile {
+	margin-top: 1em;
+}
+
+div.segment.vertical {
+	position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+div.icon {
+	display: inline-block;
+}
+
+div.round.icon {
+	width: 4em;
+	height: 4em;
+	border-radius: 50%;
+	border: 1px solid #e72424;
+}
+
+div.icon > img {
+	position: absolute;
+	max-width: 50%;
+	max-height: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+div.message {
+	padding: 1em;
+	border-radius: 7px;
+}
+
+/* EOL misc */
