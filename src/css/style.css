@@ -396,7 +396,7 @@ h1 {
     padding-top: 3em;
 }
 
-.header.divided > .content:before {
+.header.divided > .content::before {
 	content: '';
 	position: absolute;
     height: 2px;
@@ -407,15 +407,15 @@ h1 {
     max-width: 100%;
 }
 
-.header[class*="noticeably divided"] > .content:before {
+.header[class*="noticeably divided"] > .content::before {
     background: #e72424;
 }
 
-.header[class*="ghostly divided"] > .content:before {
+.header[class*="ghostly divided"] > .content::before {
     opacity: .75;
 }
 
-.header.center.aligned > .content:before {
+.header.center.aligned > .content::before {
 	left: 50%;
     transform: translateX(-50%);
 }
@@ -464,7 +464,7 @@ h1 {
     border-color: inherit;
 }
 
-.inverted.button:before {
+.inverted.button::before {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -476,7 +476,7 @@ h1 {
 	transition: .3s opacity ease;
 }
 
-.inverted.button:hover:before {
+.inverted.button:hover::before {
 	opacity: .14;
 }
 
